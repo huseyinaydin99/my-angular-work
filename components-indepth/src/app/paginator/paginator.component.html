@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let page of pages; index as i">
+    <a href="#" (click)="pageNumberClicked(i)">{{i + 1}}</a>
+  </li>
+</ul>

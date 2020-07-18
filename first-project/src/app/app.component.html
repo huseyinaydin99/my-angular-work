@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}! {{abc}}  
+  </h1>
+  <h2>Selam Here are some links to help you start: <app-hello-world></app-hello-world></h2>
+<h4>{{dateMessage}}</h4><br>
+<button *ngIf="!isCollabsed" (click)="toggleCollabse()">Collabse(Gizle)</button>
+<button *ngIf="isCollabsed" (click)="toggleCollabse()">Expand(Göster)</button><br>
+<app-address *ngIf="!isCollabsed" [user]="user"></app-address>
+</div>
+<input type="text" [(ngModel)]='inputText'>{{inputText}}<br>
+<app-view-component></app-view-component>
+<router-outlet></router-outlet>

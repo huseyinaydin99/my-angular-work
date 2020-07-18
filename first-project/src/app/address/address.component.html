@@ -1,0 +1,7 @@
+{{user.name}}
+<div *ngIf="user.phone.length > 0">
+  <p>isim : {{user.name}}</p>
+  <p>başlık : {{user.title}}</p>
+  <p>adres : {{user.address}}</p>
+  <p *ngFor="let phoneNumber of user.phone">telefon : {{phoneNumber}}</p>
+</div>
